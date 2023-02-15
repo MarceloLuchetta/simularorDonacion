@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    
+}
+body{
+    background-color:rgb(0, 109, 119);
+    padding: 10px;
+    
+}
+.menu{
+    list-style-type:none;
+    background-color:cadetblue;
+    padding-block: 10px;
+}
+.menu_item{
+    display:inline-block;
+    margin-right: 20px;
+    margin-left: 10px;
+
+}
+.menu_item a{
+    color:black;
+    text-decoration: none;
+}
+.menu_item.active a, .menu_item a:hover{
+    text-decoration: underline double;
+}
+main{
+    padding: 40px;
+}
+.cardLugar{
+    width: 280px;
+    background-color: rgb(175, 111, 33);
+    padding: 10px;
+    border-radius: 10px;
+}
+.cardLugarImg{
+    width: 100%;
+}
+.cardLugarTitulo{
+    font-size: 20px;
+}
+.cardLugarParrafo{
+    font-size: 17px;
+}
+.cardLugarBoton{
+    background-color:cadetblue;
+    border:none;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+.cardLugarImg, .cardLugarTitulo, .cardLugarParrafo, .cardLugarBoton {
+    margin-bottom: 10px;
+}
+h2{
+    padding: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkred
+}
+.fotoConstruccion{
+    width: 250px;
+}
