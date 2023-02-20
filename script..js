@@ -1,3 +1,5 @@
+function turno() {
+
 
 
 alert ("Bienvenido al sistema de carga de donación de sangre.");
@@ -21,23 +23,23 @@ class Donante {
 
 var lista_donantes =[];
 function cargaPaciente (){
-    let nombre=prompt ("ingrese su nombre:");
-    let edad=prompt("ingrese su edad");
-    let hospital=prompt("El Hospital a donar es");
-    let donante= new Donante (nombre,edad,hospital);
+    var nombre=prompt ("ingrese su nombre:");
+    var edad=prompt("ingrese su edad");
+    var hospital=prompt("El Hospital a donar es");
+    var donante= new Donante (nombre,edad,hospital);
     lista_donantes.push (donante);
-   
-    let nuevaOpcion= prompt ("desea cargar un nuevo paciente opcion 1) si no lo desea opcion 2)");
+
+    var nuevaOpcion= prompt ("desea cargar un nuevo paciente opcion 1) si no lo desea opcion 2)");
     if (nuevaOpcion==1){
         cargaPaciente();
     }
 }
 cargaPaciente();
-for (let donante of lista_donantes){
+for (var donante of lista_donantes){
     console.log(donante.get_datos());
 }
 
-let opcionModificar = prompt ("Desea modificar el hospital para donar?, opción 1) si desea modificar, opción 2) Si desea Salir")
+var opcionModificar = prompt ("Desea modificar el hospital para donar?, opción 1) si desea modificar, opción 2) Si desea Salir")
 
 function buscar_paciente(donante){
     return donante.nombre==nombreDonante;
@@ -56,7 +58,7 @@ while (opcionModificar ==2) {
     break;
 }
 
-
+}
 
 
 
